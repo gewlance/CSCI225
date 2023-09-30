@@ -15,15 +15,69 @@
         <div class="Embed video">
             <iframe src="https://www.youtube.com/embed/9c2NqlUWZfo?si=z7RFVNK9iO6MdtmL" frameborder="0"></iframe>
         </div>
+        <br>
 
-        <form action="">
+        <form action="" name="feedback">Feedback:
+            <br>
+
+            First Name: <input type="text" name="fname" placeholder="anonymous" required>
+            <br>
+
+            Last Name: <input type="text" name="lname" placeholder="anonymous" required>
+            <br>
+
+            Email address: <input type="email" placeholder="name@domain.com" required>
+            <br>
+
+            Will you recommend this website?
+            <input type="radio" id="radioOption1" value="Yes" name="recommendation" checked>
+            <label for="radioOption1">Yes</label>
+
+            <input type="radio" id="radioOption2" value="No" name="recommendation">
+            <label for="radioOption2">No</label>
+            <br>
+
+            Favorite Website:
+            <select name="Websites" id="websiteSelection">
+                <option value="Google">Google</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Instagram">Instagram</option>
+            </select>
+            <br>
+
+            <label for="rating">Rate this website from 0 to 10</label>            
+            <input type="range" name="rating" min="0" max="10">
+            <br>
             
+            <textarea name="comment" id="commentSection" cols="30" rows="10" maxlength="500" placeholder="Enter your comments..."></textarea>
+            <br>
+
+            <input type="submit" name="submit">
+
+            <h1 style="color: rgb(100, 100, 100);">Additional Features</h1>
+            
+            <fieldset>
+                <legend>Feature #1) Fieldset and Legend</legend>
+
+                <legend>Feature #2) Multiselect Box for Best Best Band(s):
+                    <select name="bestbands" multiple="multiple" size="3">
+                        <option value="PinkFloyd">Pink Floyd</option>
+                        <option value="Genesis">Genesis</option>
+                        <option value="WhiteStripes">White Stripes</option>
+                    </select>
+                </legend>
+                <br>
+                
+                <label for="Checkbox">Feature #3) Favorite Color Multicheckbox:</label>
+                <input type="checkbox" name="favoriteColorMulticheckbox" value="Red">Red
+                <input type="checkbox" name="favoriteColorMulticheckbox" value="Chartreuse">Chartreuse
+                <input type="checkbox" name="favoriteColorMulticheckbox" value="Purple">Purple
+                <br>  
+        
+            </fieldset>
+
         </form>
-
-
-
-
-
 
     </body>
 
