@@ -1,0 +1,163 @@
+:root{
+    --page-color:hsla(30, 32%, 88%, 0.9);
+    --body-color: hsla(359, 39%, 35%, 0.9);
+    --sidebar-color: rgb(191, 164, 99);
+    --footbar-color: hsla(27, 43%, 65%, 1);
+    --tab-color: hsla(27, 43%, 55%, 1);
+    --footbar-height: 15vh;
+    --page-position: 88%;
+    --page-width: 30%;
+    --tab-gap: 2vw;
+    --tab-width: 10vw;
+    --tab-height: 5vh;
+}
+
+h1{
+    color: rgb(100, 100, 100);
+    transition: 1s;
+    text-shadow:2px 1px black;
+}
+
+h1:hover{
+    color: green;
+}
+
+.navbar{
+    position: fixed;
+    z-index:1;
+    padding:5px;
+    top:0%;
+    left:0%;
+    width:100%;
+    height: 3%;
+    background-color: brown;
+    font-size: 1.6vh;
+}
+
+.navlist{
+    display: flex;
+    list-style-type: none;
+    padding: 6px;
+    margin: 0;
+}
+
+.navlist li{
+    width: 100%;
+    padding-left:5%
+}
+
+.navlist a{
+    color:#5590ff;
+}
+
+body{
+    padding-top:2vh;
+    padding-bottom:5vh;
+    background-color: beige;
+}
+
+footer{
+    position: fixed;
+    bottom:0%;
+    left:0%;
+    width:100%;
+    height: 5%;
+    background-color: aqua;
+}
+
+div.introduction{
+    position: absolute;
+    transform: translate(0px,20px);
+    width: 40%;
+    padding:15px;
+    background-color: #5590ff;
+}
+
+div.assignment{
+    position: absolute;
+    transform: translate(85vw,0px);
+    background-color: beige;
+    width:14vw;
+    padding:1px
+}
+
+div.collardsphoto{
+    position:absolute;
+    z-index:-1;
+    transform:translate(70vw,180px);
+}
+
+div.Portfolio{
+    position:fixed;
+    top: var(--page-position);
+    transform:translate(740px,0px);
+    background-color:aquamarine;
+    width:40vw;
+    transition:1s;
+}
+
+div.Portfolio:hover{
+    transform:translate(740px, -200px);
+}
+
+.ullist{
+    width: 90%;
+    padding-bottom:15px
+}
+
+div.ContactMe{
+    position:fixed;
+    top: var(--page-position);
+    background-color:blanchedalmond;
+    width:300px;
+    transform: translate(430px,0px);
+    transition:1s;
+}
+
+div.ContactMe:hover{
+    transform: translate(430px,-130px);
+}
+
+div.ContactMe p, div.ContactMe address{
+    padding-left:15px;
+}
+
+
+div.schedule{
+    position:fixed;
+    top: var(--page-position);
+    background-color:burlywood;
+    width:420px;
+    height:515px;
+    transition:1s;
+}
+
+div.schedule:hover{
+    transform: translate(0,-460px);
+}
+
+
+
+div.introduction, div.assignment, div.Portfolio, div.ContactMe, div.schedule{
+    border-width:2px;
+    border-radius:15px;
+    border-style:solid;
+    border-color:black;
+}
+
+p,li,address{
+    font-family: 'Tilt Neon', sans-serif;
+    color:#ff5aa6;
+}
+
+
+
+
+
+
+
+/*div.navbar, div.introduction,div.assignment,div.portfolio{
+    position: fixed;
+    padding-left: 2%;
+    margin: 5px;
+}*/
