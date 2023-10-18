@@ -1,0 +1,206 @@
+:root{
+    --color1:rgb(255, 255, 255);
+    --color2:rgb(164, 22, 26) ; 
+    --color3: rgb(229, 56, 59);
+    --color4: rgb(11, 9, 10);
+    --color5: rgb(177, 167, 166); 
+    --page-position: 88%;
+}
+
+h1{
+    color: var(--color1);
+    transition: 1s;
+    text-shadow:2px 1px rgb(229, 56, 59);
+    text-transform: uppercase;
+    font-size:24px;
+    letter-spacing:1px;
+}
+
+h1:hover{
+    color: var(--color3);
+}
+
+h1:active{
+    font-size:40px;
+}
+
+a{
+    color: var(--color1);
+    transition:1s;
+}
+
+a:hover{
+    text-decoration:none;
+    font-weight:bolder;
+    color: var(--color3);
+}
+
+a:visited {
+    color: var(--color3);
+}
+
+.navbar{
+    position: fixed;
+    z-index:1;
+    padding:5px;
+    top:0%;
+    left:0%;
+    width:100%;
+    height: 3%;
+    background-color: var(--color4);
+    font-size: 1.6vh;
+    transition:1s;
+}
+ 
+#navbar:hover {
+    height:40px;    
+}
+
+.navlist{
+    display: flex;
+    padding: 6px;
+    margin: 0;
+    padding-right:15px;
+}
+
+.navlist li{
+    list-style:none;
+    width: 100%;
+    border-width:2px;
+    border-radius:15px;
+    border-style:solid;
+    background-color: var(--color4);
+    text-align:center;
+}
+
+.navlist a{
+    background-color: var(--color4);
+}
+
+body{
+    padding-top:2vh;
+    padding-bottom:5vh;
+    background-image: url(../img/BLUEBB.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px 1000px;
+}
+
+footer{
+    position: fixed;
+    bottom:0%;
+    left:0%;
+    width:100%;
+    height: 5%;
+    background-color: var(--color4);
+    color: var(--color5);
+}
+
+div.introduction{
+    position: absolute;
+    transform: translate(0px,20px);
+    width: 40%;
+    padding:15px;
+    background-color: var(--color4);
+}
+
+div.assignment{
+    position: absolute;
+    transform: translate(85vw,0px);
+    background-color: var(--color5);
+    width:14vw;
+    padding:1px
+}
+
+div.collardsphoto{
+    position:absolute;
+    z-index:-1;
+    transform:translate(70vw,180px);
+}
+
+div.Portfolio{
+    position:fixed;
+    top: var(--page-position);
+    transform:translate(740px,0px);
+    background-color: var(--color5);
+    width:40vw;
+    transition:1s;
+}
+
+div.Portfolio:hover{
+    transform:translate(740px, -200px);
+}
+
+.ullist{
+    width: 90%;
+    padding-bottom:15px
+}
+
+div.ContactMe{
+    position:fixed;
+    top: var(--page-position);
+    background-color: var(--color5);
+    width:300px;
+    transform: translate(430px,0px);
+    transition:1s;
+}
+
+div.ContactMe:hover{
+    transform: translate(430px,-130px);
+}
+
+div.ContactMe p, div.ContactMe address{
+    padding-left:15px;
+}
+
+div.schedule{
+    position:fixed;
+    top: var(--page-position);
+    background-color: var(--color5);
+    width:420px;
+    height:515px;
+    transition:1s;
+}
+
+div.schedule table{
+    border: 1px solid;
+    background-color: var(--color4);
+    color: var(--color1);
+    text-align:center;
+}
+
+td{
+    vertical-align: top;
+    empty-cells:hide;
+    padding:1px;
+}
+
+tr:nth-child(even){
+    background-color: var(--color5);
+}
+
+div.schedule:hover{
+    transform: translate(0,-460px);
+}
+
+div.introduction, div.assignment, div.Portfolio, div.ContactMe, div.schedule{
+    border-width:2px;
+    border-radius:15px;
+    border-style:solid;
+    border-color: var(--color3);
+}
+
+p,li,address{
+    font-family: 'Tilt Neon', sans-serif;
+    color: var(--color1);
+    font-weight:100;
+}
+
+p{
+    line-height:1.5;
+    text-align:left;
+}
+
+p::first-letter{
+    font-weight:bold;
+    font-size:26px;
+}
