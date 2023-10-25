@@ -1,0 +1,33 @@
+.form-floating{
+    width:250px;
+}
+
+.names{
+    position:absolute;
+    transform: translate(0px,-200px)
+}
+
+#LastNameform{
+    transform: translate(300px, -98px)
+}
+
+#lastNameString{
+    transform: translate(300px, -82px)
+}
+
+.form{
+    transform: translate(60vw, -150px);
+}
+
+#feedbackString{
+    transform:translate(0px, -200px);
+}
+
+.Embedvideo{
+    transform: translate(50px, 200px);
+}
+
+.recommendation{
+    padding-top:10px;
+    padding-bottom:10px;
+}

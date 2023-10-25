@@ -1,0 +1,33 @@
+.grid-container {
+    display:grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 20px;
+}
+
+.form-floating{
+    width:250px;
+}
+
+#embedgrid{
+    text-align: center;
+    padding-left:10vw;
+    padding-top:22vh;
+    
+}
+
+#FirstNameForm, #LastNameForm, #emailForm, #FavWeb, #recForm, #commentForm{
+    margin-bottom:20px;
+}
+
+.embedBorder{
+    border-radius: 30px; 
+    width: 560px; 
+    height: 300px; 
+    overflow: hidden;
+}
