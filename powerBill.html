@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+        
+    <head>
+        <title>Assignment 5</title>
+        <link rel="stylesheet" href="css/powerBill.css">
+    </head>    
+
+    <body style="background-color:rgb(175, 210, 221);">
+        <div class="grid-container">
+            <div class="grid-item">
+                <form>
+                    
+                    <div class="form-floating">
+                        <label for="KwHours">Enter Monthly Kilowatt Hours:</label>
+                        <input type="text" placeholder="Monthly Kw Hours" name="KwHours" id="KwHourForm" required>
+                    </div>
+                    
+                    <div class="form-floating" >
+                        <label for="numDays">Enter Number of days for current billing period:</label>
+                        <input type="text" placeholder="# of days" name="numDays" id="numDaysForm" required>
+                    </div>
+                    
+                    <div class="form-floating" >
+                        <label for="cityLimits">Is your residence inside the city limits?</label>
+                        <input type="checkbox" name="cityLimits" id="cityLimitsBox">
+                    </div>
+
+                    <div class="form-floating" >
+                        <label for="sunMon">Is this a summer month (Jun-Sep)?</label>
+                        <input type="checkbox" name="sunMon" id="sumMonBox">
+                    </div>
+                    
+                    <div class="form-floating" >
+                        <label for="saleTax">Enter Sales Tax:</label>
+                        <input type="text" placeholder="Sales Tax" name="saleTax" id="saleTaxForm" required>
+                    </div>
+
+                    <input type="submit" id="SubmitBtn">
+                    <input type="reset" id="reset">
+            </div>
+        
+
+            <div class="grid-item" id="grid2">
+
+                <table border="1" id="table">
+                    <tr><td colspan="5">Items</td><td>Fees</td></tr>
+                    <tr><td colspan="5">Base Charge</td><td id="BaseCharge"></td></tr>
+                    <tr><td colspan="5">Tier 1 Component (kWh):</td><td id="t1"></td></tr>
+                    <tr><td colspan="5">Tier 2 Component (kWh):</td><td id="t2"></td></tr>
+                    <tr><td colspan="5">Tier 3 Component (kWh):</td><td id="t3"></td></tr>
+                    <tr><td colspan="5">Base Revenue == Base Bill Subtotal:</td><td id="baseRevenue"></td></tr>
+                    <tr><td colspan="5">Fuel Cost Rider:</td><td id="FCR"></td></tr>
+                    <tr><td colspan="5">Demand Side Management Residential Rider</td><td id="DSMRR"></td></tr>
+                    <tr><td colspan="5">Nuclear Compliane Cost Recovery Rider:</td><td id="NCCRR"></td></tr>
+                    <tr><td colspan="5">Envirenmental Compliance Cost Recovery Rider:</td><td id="ECCRR"></td></tr>
+                    <tr><td colspan="5">Total Revenue == Current Service Subtotal:</td><td id="TotalRevenue"></td></tr>
+                    <tr><td colspan="5">Franchise Fee:</td><td id="franchiseFee"></td></tr>
+                    <tr><td colspan="5">Total (excluding tax):</td><td id="totalNoTax"></td></tr>
+                    <tr><td colspan="5">TOTAL (w/tax):</td><td id="total"></td></tr>
+                </table>
+            </div>
+        </div>
+
+        <script src="js/powerBill.js"></script>
+    
+    </body>
+</html>
