@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+        
+    <head>
+        <title>MontyHill Game</title>
+        <link rel="stylesheet" href="css/montyhill.css">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    </head>    
+
+    <body style="background-color:rgb(175, 210, 221);">
+
+        <div class="grid-container">
+            <div class="grid-item" id="grid1">
+                <img src="img/CloseDoor.png" alt="door" id="1">
+                <img src="img/OpenDoor.png" alt="door2" id="d1" class="hide">
+                <img src="img/Goat.png" alt="goat" id="g1" class="hide">
+                <img src="img/Car.png" alt="car" id="car1" class="hide">
+            </div>
+
+            <div class="grid-item" id="grid2">
+                <img src="img/CloseDoor.png" alt="door" id="2">
+                <img src="img/OpenDoor.png" alt="door2" id="d2" class="hide">
+                <img src="img/Goat.png" alt="goat" id="g2" class="hide">
+                <img src="img/Car.png" alt="car" id="car2" class="hide">
+            </div>
+
+            <div class="grid-item" id="grid3">
+                <img src="img/CloseDoor.png" alt="door" id="3">
+                <img src="img/OpenDoor.png" alt="door2" id="d3" class="hide">
+                <img src="img/Goat.png" alt="goat" id="g3" class="hide">
+                <img src="img/Car.png" alt="car" id="car3" class="hide">
+            </div>
+
+            <div class="grid-item" id="grid4">
+                <p id="prompt">Click a door and then press Continue</p>
+                <button id="ContButton">Continue</button>
+                <button id="SwButton" class="hide">Switch</button>
+                <button id="StButton" class="hide">Stay</button>
+                <button id="ResButton" class="hide">Try Again</button>
+            </div>
+        </div>
+
+    </body>
+    <script src="js/montyhill.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</html>
